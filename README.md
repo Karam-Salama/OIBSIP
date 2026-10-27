@@ -1,14 +1,6 @@
-
 <div align="center">
 
 # 📱 Oasis Infobyte Android Development Internship (OIBSIP)
-
-**Candidate Name:** Karam Mahmoud Mostafa Salama  
-**Intern ID:** `OIB/N2/IP1066`  
-**Track:** Android Application Development  
-**Batch:** November 2026  
-
----
 
 [![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
@@ -17,7 +9,16 @@
 
 </div>
 
-<br>
+---
+
+### 👤 Candidate Details
+
+- **Candidate Name:** Karam Mahmoud Mostafa Salama
+- **Intern ID:** `OIB/N2/IP1066`
+- **Track:** Android Application Development
+- **Batch:** November 2026
+
+---
 
 ## 📖 Overview
 
@@ -93,13 +94,13 @@ Each task has been recorded and posted on LinkedIn according to the submission g
 
 ## 📬 Contact & Links
 
-- **LinkedIn:** [Karam Salama](https://www.linkedin.com/in/karam-salama/)
-- **GitHub Profile:** [@Karam-Salama](https://github.com/Karam-Salama)
-- **Email:** karam.salama@example.com
+- **LinkedIn Profile:** [LinkedIn](https://www.linkedin.com/in/karam-salama/)
+- **GitHub Profile:** [GitHub](https://github.com/Karam-Salama)
+- **Portofolio:** [Portofolio](https://karam-salama-vc6dgdq.gamma.site)
+- **Email:** karamsalama2024@gmail.com
 
 <hr>
 
 <div align="center">
   <i>Developed with ❤️ by Karam Salama for Oasis Infobyte Internship Program</i>
 </div>
->>>>>>> 484134dfbda3f68bed15e30eb0c87c9e2e0d1318

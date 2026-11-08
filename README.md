@@ -64,8 +64,8 @@ OIBSIP/
 | Task # | Task Name | Description & Key Concepts | Status | Directory |
 |:---:|---|---|:---:|:---:|
 | **01** | **Unit Converter App** | Metric and unit conversion utility (Length, Weight, Temperature) handling dynamic calculations and user input validation. | ✅ Completed | [`Android-Task1-UnitConverter`](./Android-Task1-UnitConverter) |
-| **02** | **To-Do List App** | Productivity task manager using Room Database/SQLite, `RecyclerView`, and CRUD operations with task completion tracking. | ✅ Completed | [`Android-Task2-ToDoApp`](./Android-Task2-ToDoApp) |
-| **03** | **Calculator App** | Modern interactive arithmetic calculator with sequential operator chaining, grid UI, and zero-division error handling. | ✅ Completed | [`Android-Task3-Calculator`](./Android-Task3-Calculator) |
+| **02** | **Calculator App** | Modern interactive arithmetic calculator with sequential operator chaining, grid UI, and zero-division error handling. | ✅ Completed | [`Android-Task2-Calculator`](https://github.com/Karam-Salama/OIBSIP/tree/master/MobileDev-L1-Task2-CalculatorApp) |
+| **03** | **To-Do List App** | Productivity task manager using Room Database/SQLite, `RecyclerView`, and CRUD operations with task completion tracking. | ✅ Completed | [`Android-Task2-ToDoApp`](./Android-Task3-ToDoApp) |
 | **04** | **Quiz Application** | Interactive multiple-choice trivia app featuring score tracking, progress bar, Intent-based navigation, and dynamic state updates. | ✅ Completed | [`Android-Task4-QuizApp`](./Android-Task4-QuizApp) |
 | **05** | **Stopwatch App** | Time-tracking application implementing start, pause, lap-recording, and reset capabilities with background-safe chronometer logic. | ✅ Completed | [`Android-Task5-Stopwatch`](./Android-Task5-Stopwatch) |
 

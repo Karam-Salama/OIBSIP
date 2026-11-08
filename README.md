@@ -2,7 +2,7 @@
 
 # 📱 Oasis Infobyte Android Development Internship (OIBSIP)
 
-[![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
+[![Java](https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
 [![Architecture](https://img.shields.io/badge/Architecture-MVVM-blue?style=for-the-badge)](https://developer.android.com/topic/architecture)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -38,11 +38,11 @@ OIBSIP/
 │   ├── app/
 │   ├── screenshots/
 │   └── README.md
-├── Android-Task2-ToDoApp/
+├── Android-Task2-Calculator/
 │   ├── app/
 │   ├── screenshots/
 │   └── README.md
-├── Android-Task3-Calculator/
+├── Android-Task3-TodoApp/
 │   ├── app/
 │   ├── screenshots/
 │   └── README.md
@@ -75,12 +75,9 @@ OIBSIP/
 
 Across these projects, the following industry standards and frameworks were utilized:
 
-- **Language:** Kotlin
-- **Architecture Pattern:** MVVM (Model-View-ViewModel) with Clean Architecture principles.
+- **Language:** Java
+- **Architecture Pattern:** Clean Architecture principles.
 - **UI & Layouts:** Material Design 3, XML Layouts, View Binding, ConstraintLayout, and RecyclerView.
-- **Asynchronous Operations:** Kotlin Coroutines & Flow for smooth UI responsiveness.
-- **Local Storage:** Room Database / SQLite & Shared Preferences.
-- **State Management:** LiveData / StateFlow & ViewModel.
 
 ---
 

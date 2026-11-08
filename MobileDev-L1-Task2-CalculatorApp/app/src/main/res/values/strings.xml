@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Calculator</string>
+
+    <!-- Splash screen -->
+    <string name="splash_tagline">Quick math, clean result</string>
+    <string name="splash_version">Version %1$s</string>
+
+    <!-- Main screen -->
+    <string name="title_calculator">Calculator</string>
+    <string name="display_initial">0</string>
+
+    <!-- Keys -->
+    <string name="key_clear">AC</string>
+    <string name="key_backspace">⌫</string>
+    <string name="key_percent">%</string>
+    <string name="key_divide">÷</string>
+    <string name="key_multiply">×</string>
+    <string name="key_subtract">−</string>
+    <string name="key_add">+</string>
+    <string name="key_equals_label">=</string>
+    <string name="key_decimal">.</string>
+    <string name="key_negate">±</string>
+    <string name="digit_0">0</string>
+    <string name="digit_1">1</string>
+    <string name="digit_2">2</string>
+    <string name="digit_3">3</string>
+    <string name="digit_4">4</string>
+    <string name="digit_5">5</string>
+    <string name="digit_6">6</string>
+    <string name="digit_7">7</string>
+    <string name="digit_8">8</string>
+    <string name="digit_9">9</string>
+
+
+
+
+
+
+    <!-- Accessibility -->
+    <string name="cd_backspace">Delete last digit</string>
+    <string name="cd_history">History</string>
+    <string name="cd_more_options">More options</string>
+    <string name="cd_divide">Divide</string>
+    <string name="cd_multiply">Multiply</string>
+    <string name="cd_subtract">Subtract</string>
+    <string name="cd_add">Add</string>
+    <string name="cd_equals">Equals</string>
+    <string name="cd_clear">Clear all</string>
+    <string name="cd_percent">Percent</string>
+    <string name="cd_negate">Change sign</string>
+    <string name="cd_decimal">Decimal point</string>
+
+    <!-- Errors -->
+    <string name="error_divide_by_zero"> ∞ </string>
+    <string name="error_invalid_expression">Invalid expression</string>
+
+    <!-- Menu and history -->
+    <string name="menu_clear_history">Clear history</string>
+    <string name="history_empty_title">No calculations yet</string>
+    <string name="history_empty_body">Your recent results will appear here.</string>
+</resources>

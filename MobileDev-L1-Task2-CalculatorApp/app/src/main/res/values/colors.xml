@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Surfaces and text -->
+    <color name="surface">#EEF0F4</color>
+    <color name="text_primary">#1B2230</color>
+    <color name="text_secondary">#5B6577</color>
+
+    <!-- Number keys -->
+    <color name="key_number">#FFFFFF</color>
+    <color name="key_number_text">#1B2230</color>
+
+    <!-- Function keys: AC, backspace, % -->
+    <color name="key_function">#DDE3EE</color>
+    <color name="key_function_text">#2B3A5A</color>
+
+    <!-- Operator keys: ÷ × − + -->
+    <color name="key_operator">#CFE3E3</color>
+    <color name="key_operator_text">#0B5555</color>
+
+    <!-- Equals key -->
+    <color name="key_equals">#0E6B6B</color>
+    <color name="key_equals_text">#FFFFFF</color>
+
+    <!-- Splash screen (same in light and dark) -->
+    <color name="splash_background">#0E6B6B</color>
+    <color name="splash_logo_tile">#FFFFFF</color>
+    <color name="splash_logo_symbol_bg">#CFE3E3</color>
+    <color name="splash_logo_symbol">#0B5555</color>
+    <color name="splash_tagline">#CFE3E3</color>
+    <color name="splash_version">#9ADBD6</color>
+</resources>

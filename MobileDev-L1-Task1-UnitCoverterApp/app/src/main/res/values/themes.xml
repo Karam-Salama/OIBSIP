@@ -6,4 +6,12 @@
     </style>
 
     <style name="Theme.UnitConverterApp" parent="Base.Theme.UnitConverterApp" />
+
+    <style name="Theme.Calculator.Splash" parent="Theme.UnitConverterApp">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:windowSplashScreenBackground">@color/primary</item>
+    </style>
+
 </resources>

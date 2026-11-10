@@ -10,7 +10,7 @@
     android:fillViewport="true"
     android:overScrollMode="never"
     android:scrollbars="none"
-    tools:context=".modules.home.views.HomeActivity">
+    tools:context=".modules.home.HomeActivity">
 
     <!-- fillViewport: on a normal screen this fills the screen (title area stretches),
          on a small screen or in landscape the content is taller and scrolls. -->

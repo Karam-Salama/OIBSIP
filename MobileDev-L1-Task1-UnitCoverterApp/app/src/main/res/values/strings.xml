@@ -1,3 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Unit Converter App</string>
+    <string name="app_name">Unit Converter</string>
+    <string name="app_lable">Convertly</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="splash_title">Unit Converter</string>
+    <string name="splash_tagline">Fast and simple</string>
+    <string name="home_subtitle">Convert units in seconds</string>
+    <string name="label_category">Category</string>
+    <string name="label_from">From</string>
+    <string name="label_to">To</string>
+    <string name="btn_swap">Swap units</string>
+    <string name="btn_copy">Copy result</string>
+    <string name="btn_copied">Copied</string>
+    <string name="_1">1</string>
 </resources>

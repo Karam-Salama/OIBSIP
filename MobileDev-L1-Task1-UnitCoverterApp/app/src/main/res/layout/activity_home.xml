@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".modules.home.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/home_logo"
+                android:contentDescription="@string/app_name"
+                android:padding="9dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/splash_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_subtitle"
+                    android:textColor="@color/text_muted"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Category Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/label_category"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_rounded_spinner">
+
+            <Spinner
+                android:id="@+id/categories_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:popupBackground="@drawable/bg_spinner_popup"
+                android:popupElevation="6dp"
+                android:dropDownVerticalOffset="4dp"
+                android:background="@drawable/bg_rounded_spinner"
+                android:paddingHorizontal="16dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="8dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_arrow_drop_down" />
+
+
+        </FrameLayout>
+
+
+        <!-- From Input Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/label_from"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etFromValue"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_input"
+                android:fontFamily="@font/inter_semi_bold"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLines="1"
+                android:paddingHorizontal="16dp"
+                android:text="@string/_1"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp" />
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_rounded_spinner">
+
+                <Spinner
+                    android:id="@+id/spinnerFromUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:popupBackground="@drawable/bg_spinner_popup"
+                    android:popupElevation="6dp"
+                    android:dropDownVerticalOffset="4dp"
+                    android:paddingHorizontal="16dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_arrow_drop_down"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Swap Units Button -->
+        <TextView
+            android:id="@+id/tvSwapUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/btn_swap"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
+        <!-- To Output Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/label_to"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvToValue"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded_output"
+                android:fontFamily="@font/inter_semi_bold"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingHorizontal="16dp"
+                android:text="0"
+                android:textColor="@color/text_primary"
+                app:autoSizeMaxTextSize="22sp"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeTextType="uniform"
+                tools:ignore="HardcodedText" />
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_rounded_spinner">
+
+                <Spinner
+                    android:id="@+id/spinnerToUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:popupBackground="@drawable/bg_spinner_popup"
+                    android:popupElevation="6dp"
+                    android:dropDownVerticalOffset="4dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="32dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="8dp"
+                    android:popupBackground="@drawable/bg_spinner_popup"
+                    android:popupElevation="6dp"
+                    android:dropDownVerticalOffset="4dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_arrow_drop_down" />
+            </FrameLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Copy Result Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCopyResult"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/btn_copy"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+</ScrollView>

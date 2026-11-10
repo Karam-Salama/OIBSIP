@@ -1,25 +1,24 @@
-# 📏 Unit Converter App
+# 📱 Modern Android Unit Converter App
 
 A clean, simple, and fast unit converter app. Pick a category, type a value, and get the converted result instantly, with a one-tap swap and a copy button.
 
-> 🚧 **Status:** UI/UX design is finished. Implementation is in progress.
+This project is developed as **Task 1** for the Android App Development Internship at **Oasis Infobyte**.
 
 ---
 
-## 👩‍💻 Developer
-* **Name:** Nadia
-* **Program:** <!-- e.g. Android App Development Internship (company name) -->
+## 👨‍💻 Developer
+* **Name:** Karam Mahmoud Mostafa Salama  
+* **Program:** Android App Development Internship (Oasis Infobyte)
 
 ---
 
 ## 🌟 Features
-* **Splash Screen:** A welcoming blue screen with the app logo, name, and a short tagline, with a smooth fade-out transition.
-* **Five Categories:** Length, Weight, Temperature, Volume, and Speed.
-* **Real-time Conversion:** The result updates as you type, with no convert button needed.
-* **Smart Defaults:** Each category opens with the most useful pair (for example km → mi for Length, °C → °F for Temperature).
-* **Swap Units:** Flip the "From" and "To" units with one tap.
-* **Copy Result:** Copy the converted value together with its unit.
-* **Readable Output:** Very large and very small numbers switch to scientific notation automatically.
+* **Splash Screen:** A beautifully styled welcoming screen with clean typography, version tracking, and smooth transitions.
+* **Modern UI/UX:** Designed following Material Design guidelines with custom color palettes and responsive button margins.
+* **Real-time Expression Evaluation:** Powered by the **Mozilla Rhino** JavaScript engine to compute mathematical expressions seamlessly as you type.
+* **Essential Operations:** Supports addition, subtraction, multiplication, division, percentage/modulo operations, and decimal calculations.
+* **Advanced Controls:** Includes a Clear All (`AC`) option and a functional Backspace (`⌫`) button for correcting inputs.
+* **Edge-to-Edge Display:** Implements modern Android window insets for immersive full-screen layouts.
 
 ---
 
@@ -27,9 +26,8 @@ A clean, simple, and fast unit converter app. Pick a category, type a value, and
 
 | Splash Screen | Converter Home |
 | :---: | :---: |
-| <img src="screenshots/splash.png" width="250"/> | <img src="screenshots/home.png" width="250"/> |
+| <img src="https://github.com/user-attachments/assets/e6b19091-7d21-4106-a820-0a544efd6e70" width="250"/> | <img src="https://github.com/user-attachments/assets/362436b2-9212-448f-b794-b362a2cdff89" width="250"/> |
 
-*(Note: Place your screenshots inside a `screenshots` folder in the repository for the images to render correctly.)*
 
 ---
 

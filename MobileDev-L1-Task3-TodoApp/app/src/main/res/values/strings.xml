@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Todo Application</string>
+    <string name="app_lable">Taskly</string>
+    <string name="splash_tagline">Organize your day, simply.</string>
+</resources>

@@ -2,6 +2,7 @@
 <resources>
     <!-- App -->
     <string name="app_name">Calculator</string>
+    <string name="app_lable">CalcEase</string>
 
     <!-- Splash screen -->
     <string name="splash_tagline">Quick math, clean result</string>

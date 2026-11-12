@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary">#E8643C</color>
+    <color name="tf_primary">#E8663F</color>
+    <color name="tf_background">#FFF8F3</color>
+    <color name="tf_card">#FFE6DB</color>
+    <color name="tf_text_primary">#3B2A24</color>
+    <color name="tf_text_secondary">#8A7268</color>
+    <color name="tf_text_done">#C2AA9E</color>
 </resources>

@@ -10,10 +10,10 @@
 
     <!-- Used only by SplashActivity so the very first frame is already teal -->
     <style name="Theme.TodoApplication.Splash" parent="Theme.TodoApplication">
-        <item name="android:windowBackground">@color/primary</item>
-        <item name="android:statusBarColor">@color/primary</item>
-        <item name="android:navigationBarColor">@color/primary</item>
-        <item name="android:windowSplashScreenBackground">@color/primary</item>
+        <item name="android:windowBackground">@color/tf_primary</item>
+        <item name="android:statusBarColor">@color/tf_primary</item>
+        <item name="android:navigationBarColor">@color/tf_primary</item>
+        <item name="android:windowSplashScreenBackground">@color/tf_primary</item>
     </style>
 
 </resources>

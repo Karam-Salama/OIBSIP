@@ -5,32 +5,24 @@
     android:id="@+id/splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary"
-    android:fillViewport="true"
-    android:scrollbars="none"
-    android:overScrollMode="never"
+    android:background="@color/tf_primary"
     tools:context=".modules.splash.SplashActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".modules.splash.SplashActivity">
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <!-- 1. Logo Icon -->
+    <!-- 1. Logo icon -->
     <ImageView
         android:id="@+id/iv_splash_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/app_logo"
         android:contentDescription="@string/app_name"
+        android:src="@drawable/app_logo"
         app:layout_constraintBottom_toTopOf="@+id/tv_splash_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
+    <!-- 2. App name -->
     <TextView
         android:id="@+id/tv_splash_title"
         android:layout_width="wrap_content"
@@ -39,23 +31,26 @@
         android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
+        android:fontFamily="@font/kanit_bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_splash_subTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_splash_logo" />
 
-
+    <!-- 3. Tagline -->
     <TextView
         android:id="@+id/tv_splash_subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:alpha="0.8"
         android:text="@string/splash_tagline"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:alpha="0.8"
+        android:fontFamily="@font/kanit_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_splash_title" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

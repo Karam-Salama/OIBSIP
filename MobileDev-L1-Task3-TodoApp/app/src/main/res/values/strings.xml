@@ -2,4 +2,14 @@
     <string name="app_name">Todo Application</string>
     <string name="app_lable">Taskly</string>
     <string name="splash_tagline">Organize your day, simply.</string>
+    <string name="onboarding_title">Manage your tasks\nin one place</string>
+    <string name="onboarding_subtitle">Create your personal to-do list, check off what\'s done, and stay on track every day.</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_have_account">Already have an account?</string>
+    <string name="onboarding_login">Log in</string>
+
+    <!-- Illustration card items -->
+    <string name="onboarding_task_done"><strike>Finish report</strike></string>
+    <string name="onboarding_task_study">Study accounting</string>
+    <string name="onboarding_task_plan">Plan the week</string>
 </resources>

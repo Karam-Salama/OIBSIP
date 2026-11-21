@@ -25,4 +25,8 @@
     <string name="my_tasks">My Tasks</string>
     <string name="userName">Hello, Karam 👋</string>
     <string name="add_task">+ Add Task</string>
+    <string name="login_forgot">Forget Password?</string>
+    <string name="verification_prompt">Don\'t worry, just enter your email, and we\'ll send a link to verify your account.</string>
+    <string name="reset_password_btn">Reset Password</string>
+
 </resources>

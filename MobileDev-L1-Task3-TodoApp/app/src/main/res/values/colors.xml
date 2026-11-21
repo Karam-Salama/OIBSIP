@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
     <color name="tf_primary">#E8663F</color>
     <color name="tf_background">#FFF8F3</color>
     <color name="sec_bg">#FFE8D9</color>

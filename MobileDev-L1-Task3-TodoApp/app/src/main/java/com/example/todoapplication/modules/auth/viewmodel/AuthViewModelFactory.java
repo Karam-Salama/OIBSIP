@@ -22,6 +22,8 @@ public class AuthViewModelFactory implements ViewModelProvider.Factory {
             return (T) new RegisterViewModel(repository);
         } else if (modelClass.isAssignableFrom(LoginViewModel.class)) {
             return (T) new LoginViewModel(repository);
+        } else if (modelClass.isAssignableFrom(ForgetPasswordViewModel.class)) {
+            return (T) new ForgetPasswordViewModel(repository);
         }
         throw new IllegalArgumentException("Unknown ViewModel class");
     }

@@ -3,6 +3,7 @@ package com.example.todoapplication.modules.auth.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.todoapplication.R;
 import com.example.todoapplication.core.functions.HideStatusAndNavBar;
+import com.example.todoapplication.core.functions.Toggle;
 import com.example.todoapplication.core.functions.Validation;
 import com.example.todoapplication.modules.auth.model.AuthRepository;
 import com.example.todoapplication.modules.auth.viewmodel.AuthViewModelFactory;
@@ -31,8 +33,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText etEmail;
     private EditText etPassword;
+    private ImageButton btnTogglePassword;
     private MaterialButton btnLogin;
-    private TextView tvSignUp;
+    private TextView tvSignUp, tvForgetPassword;
 
     private LoginViewModel viewModel;
     private Snackbar loadingSnackbar;
@@ -65,8 +68,10 @@ public class LoginActivity extends AppCompatActivity {
     private void setupViews() {
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
+        btnTogglePassword = findViewById(R.id.btnTogglePassword);
         btnLogin = findViewById(R.id.btnLogin);
         tvSignUp = findViewById(R.id.tvSignUp);
+        tvForgetPassword = findViewById(R.id.tv_forgetPassword);
     }
 
     private void setupViewModel() {
@@ -76,9 +81,16 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setupClickListeners() {
+        btnTogglePassword.setOnClickListener(v ->
+                Toggle.togglePasswordVisibility(etPassword, btnTogglePassword));
+
         tvSignUp.setOnClickListener(v -> {
             startActivity(new Intent(this, RegisterActivity.class));
             finish();
+        });
+
+        tvForgetPassword.setOnClickListener(v -> {
+            startActivity(new Intent(LoginActivity.this, ForgetPasswordActivity.class));
         });
 
         btnLogin.setOnClickListener(v -> {

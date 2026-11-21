@@ -10,7 +10,7 @@
     android:fillViewport="true"
     android:overScrollMode="never"
     android:scrollbars="none"
-    tools:context=".modules.auth.login.view.LoginActivity">
+    tools:context=".modules.auth.view.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,8 +24,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_title"
             android:fontFamily="@font/kanit_bold"
+            android:text="@string/login_title"
             android:textColor="@color/tf_text_primary"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -43,9 +43,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:text="@string/email"
             android:fontFamily="@font/kanit_bold"
-
+            android:text="@string/email"
             android:textColor="@color/tf_lable"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -73,20 +72,45 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/etPassword"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/bg_input"
-            android:hint="@string/password"
-            android:fontFamily="@font/kanit_bold"
-            android:inputType="textPassword"
-            android:paddingStart="18dp"
-            android:paddingEnd="18dp"
-            android:textColor="@color/tf_text_primary"
-            android:textColorHint="@color/text_color_hint"
-            android:textSize="17sp" />
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_input"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="18dp"
+                android:paddingEnd="52dp"
+                android:textColor="@color/tf_text_primary"
+                android:textColorHint="@color/text_color_hint"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/btnTogglePassword"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Toggle password visibility"
+                android:src="@drawable/ic_visibility_off" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_forgetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:text="@string/login_forgot"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/tf_primary"
+            android:textSize="15sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
@@ -94,16 +118,13 @@
             android:layout_height="58dp"
             android:layout_marginTop="28dp"
             android:backgroundTint="@color/tf_primary"
+            android:fontFamily="@font/kanit_bold"
             android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:fontFamily="@font/kanit_bold"
             android:textStyle="bold"
-            app:cornerRadius="14dp"
-            app:layout_constraintBottom_toTopOf="@id/layoutLogin"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:cornerRadius="14dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -116,7 +137,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/kanit_regular"
-
                 android:text="@string/dont_have_account"
                 android:textColor="@color/tf_text_secondary"
                 android:textSize="16sp" />
@@ -125,8 +145,8 @@
                 android:id="@+id/tvSignUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:fontFamily="@font/kanit_regular"
+                android:padding="4dp"
                 android:text="@string/signUp"
                 android:textColor="@color/tf_primary"
                 android:textSize="16sp"

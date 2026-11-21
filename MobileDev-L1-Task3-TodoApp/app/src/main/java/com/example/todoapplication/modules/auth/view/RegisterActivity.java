@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.todoapplication.R;
 import com.example.todoapplication.core.functions.HideStatusAndNavBar;
+import com.example.todoapplication.core.functions.Toggle;
 import com.example.todoapplication.core.functions.Validation;
 import com.example.todoapplication.modules.auth.model.AuthRepository;
 import com.example.todoapplication.modules.auth.viewmodel.AuthViewModelFactory;
@@ -23,7 +24,9 @@ import com.example.todoapplication.modules.auth.viewmodel.RegisterViewModel;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
-
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.widget.ImageButton;
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText etName;
@@ -31,7 +34,8 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText etPassword;
     private MaterialButton btnRegister;
     private TextView tvLogin;
-
+    private ImageButton btnTogglePassword;
+    private boolean isPasswordVisible = false;
     private RegisterViewModel viewModel;
     private Snackbar loadingSnackbar;
 
@@ -60,6 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         btnRegister = findViewById(R.id.btnRegister);
         tvLogin = findViewById(R.id.tvLogin);
+        btnTogglePassword = findViewById(R.id.btnTogglePassword);
     }
 
     private void setupViewModel() {
@@ -71,6 +76,9 @@ public class RegisterActivity extends AppCompatActivity {
     private void setupClickListeners() {
         tvLogin.setOnClickListener(v -> navigateToLogin());
 
+        btnTogglePassword.setOnClickListener(v ->
+                Toggle.togglePasswordVisibility(etPassword, btnTogglePassword));
+
         btnRegister.setOnClickListener(v -> {
             if (validateInputs()) {
                 viewModel.registerUser(
@@ -80,7 +88,9 @@ public class RegisterActivity extends AppCompatActivity {
                 );
             }
         });
+
     }
+
 
     private void observeRegistrationState() {
         viewModel.registrationState.observe(this, state -> {

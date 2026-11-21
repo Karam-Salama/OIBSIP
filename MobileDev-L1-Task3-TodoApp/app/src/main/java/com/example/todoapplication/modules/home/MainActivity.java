@@ -1,5 +1,6 @@
-package com.example.todoapplication.modules.auth;
+package com.example.todoapplication.modules.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,20 +10,22 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.todoapplication.R;
-import com.example.todoapplication.core.HideStatusAndNavBar;
 
-public class RegisterActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_register);
-        HideStatusAndNavBar.hide(this);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.layoutRegister), (v, insets) -> {
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+        findViewById(R.id.btnAddTask).setOnClickListener(v ->
+                startActivity(new Intent(this, AddTaskActivity.class)));
     }
 }

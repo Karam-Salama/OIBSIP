@@ -3,8 +3,19 @@
     <color name="white">#FFFFFFFF</color>
     <color name="tf_primary">#E8663F</color>
     <color name="tf_background">#FFF8F3</color>
+    <color name="sec_bg">#FFE8D9</color>
+    <color name="txt_primary">#E8643C</color>
     <color name="tf_card">#FFE6DB</color>
     <color name="tf_text_primary">#3B2A24</color>
     <color name="tf_text_secondary">#8A7268</color>
     <color name="tf_text_done">#C2AA9E</color>
+    <color name="tf_lable">#5A443B</color>
+    <color name="text_color_hint">#757575</color>
+    <color name="screen_bg">#FFF9F5</color>
+    <color name="title_text">#3B2A22</color>
+    <color name="subtitle_text">#8A6F63</color>
+    <color name="label_text">#5A3E33</color>
+    <color name="input_border">#F0DCCB</color>
+    <color name="input_bg">#FFFFFF</color>
+    <color name="hint_text">#8E8E8E</color>
 </resources>

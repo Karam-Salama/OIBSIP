@@ -12,4 +12,17 @@
     <string name="onboarding_task_done"><strike>Finish report</strike></string>
     <string name="onboarding_task_study">Study accounting</string>
     <string name="onboarding_task_plan">Plan the week</string>
+
+    <string name="login_title">Welcome back 👋</string>
+    <string name="login_subTitle">Log in to access your tasks</string>
+    <string name="email">Email</string>
+    <string name="example_email">you@example.com</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign up</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="todo">TO DO</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="userName">Hello, Karam 👋</string>
+    <string name="add_task">+ Add Task</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.todoapplication.core;
+package com.example.todoapplication.core.functions;
 
 import android.app.Activity;
 import android.os.Build;

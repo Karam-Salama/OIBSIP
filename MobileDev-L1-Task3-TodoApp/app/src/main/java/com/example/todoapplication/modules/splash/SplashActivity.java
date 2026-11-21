@@ -12,8 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.todoapplication.R;
-import com.example.todoapplication.core.HideStatusAndNavBar;
-import com.example.todoapplication.modules.onboarding.OnboardingActivity;
+import com.example.todoapplication.core.functions.HideStatusAndNavBar;
+import com.example.todoapplication.modules.onboarding.view.OnboardingActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

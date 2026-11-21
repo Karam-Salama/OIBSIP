@@ -1,5 +1,6 @@
 package com.example.todoapplication.modules.splash;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,9 +13,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.todoapplication.R;
+import com.example.todoapplication.core.data.CacheHelper;
 import com.example.todoapplication.core.functions.HideStatusAndNavBar;
+import com.example.todoapplication.core.helpers.Constants;
+import com.example.todoapplication.modules.auth.view.LoginActivity;
 import com.example.todoapplication.modules.onboarding.view.OnboardingActivity;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -29,13 +34,18 @@ public class SplashActivity extends AppCompatActivity {
             return insets;
         });
 
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(SplashActivity.this, OnboardingActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        CacheHelper.init(this);
+
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            boolean isOnboardingCompleted = CacheHelper.getBoolean(Constants.ONBOARDING_KEY, false);
+
+            Class<?> destination = isOnboardingCompleted
+                    ? LoginActivity.class
+                    : OnboardingActivity.class;
+
+            Intent intent = new Intent(SplashActivity.this, destination);
+            startActivity(intent);
+            finish();
         }, 2500);
     }
 }

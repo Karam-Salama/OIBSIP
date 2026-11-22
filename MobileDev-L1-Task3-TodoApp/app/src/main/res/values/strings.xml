@@ -26,7 +26,8 @@
     <string name="userName">Hello, Karam 👋</string>
     <string name="add_task">+ Add Task</string>
     <string name="login_forgot">Forget Password?</string>
-    <string name="verification_prompt">Don\'t worry, just enter your email, and we\'ll send a link to verify your account.</string>
+    <string name="verification_prompt">Don\'t worry, just enter your email, \n and we\'ll send a link to verify your account.</string>
     <string name="reset_password_btn">Reset Password</string>
-
+    <!-- في strings.xml -->
+    <string name="empty_tasks_subtitle">Tap "Add Task" below to organize your day.</string>
 </resources>

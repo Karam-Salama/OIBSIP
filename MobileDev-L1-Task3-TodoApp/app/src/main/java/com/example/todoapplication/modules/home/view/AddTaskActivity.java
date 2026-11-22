@@ -1,4 +1,4 @@
-package com.example.todoapplication.modules.home;
+package com.example.todoapplication.modules.home.view;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -12,8 +12,12 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.example.todoapplication.R;
+import com.example.todoapplication.modules.home.viewmodel.AddTaskViewModel;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.chip.Chip;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -22,7 +26,11 @@ public class AddTaskActivity extends AppCompatActivity {
 
     private EditText etTitle, etNote;
     private TextView tvDueDate;
+    private Chip chipLow, chipMedium, chipHigh;
+    private MaterialButton btnSaveTask;
     private String dueDate = null; // yyyy-MM-dd
+
+    private AddTaskViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +38,6 @@ public class AddTaskActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_add_task);
 
-        // FIX: the root id in activity_add_task.xml is layoutAddTask, not main
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.layoutAddTask), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -40,11 +47,44 @@ public class AddTaskActivity extends AppCompatActivity {
         etTitle = findViewById(R.id.etTitle);
         etNote = findViewById(R.id.etNote);
         tvDueDate = findViewById(R.id.tvDueDate);
+        btnSaveTask = findViewById(R.id.btnSaveTask);
+
+        setupPriorityChips();
+
+        viewModel = new ViewModelProvider(this).get(AddTaskViewModel.class);
+        observeSaveResult();
 
         findViewById(R.id.btnBack).setOnClickListener(v -> finish());
         findViewById(R.id.btnCancel).setOnClickListener(v -> finish());
         findViewById(R.id.llDueDate).setOnClickListener(v -> showDatePicker());
-        findViewById(R.id.btnSaveTask).setOnClickListener(v -> saveTask());
+        btnSaveTask.setOnClickListener(v -> saveTask());
+    }
+
+    private void setupPriorityChips() {
+        chipLow = findViewById(R.id.chipLow);
+        chipMedium = findViewById(R.id.chipMedium);
+        chipHigh = findViewById(R.id.chipHigh);
+
+        chipLow.setOnClickListener(v -> selectChip(chipLow));
+        chipMedium.setOnClickListener(v -> selectChip(chipMedium));
+        chipHigh.setOnClickListener(v -> selectChip(chipHigh));
+    }
+
+    private void selectChip(Chip selected) {
+        chipLow.setChecked(selected == chipLow);
+        chipMedium.setChecked(selected == chipMedium);
+        chipHigh.setChecked(selected == chipHigh);
+    }
+
+    private void observeSaveResult() {
+        viewModel.saveResult.observe(this, result -> {
+            if (result == null) return;
+            btnSaveTask.setEnabled(true);
+            Toast.makeText(this, result.message, Toast.LENGTH_SHORT).show();
+            if (result.success) {
+                finish();
+            }
+        });
     }
 
     private void showDatePicker() {
@@ -57,10 +97,8 @@ public class AddTaskActivity extends AppCompatActivity {
     }
 
     private String selectedPriority() {
-        int id = ((com.google.android.material.chip.ChipGroup)
-                findViewById(R.id.chipGroupPriority)).getCheckedChipId();
-        if (id == R.id.chipLow) return "Low";
-        if (id == R.id.chipHigh) return "High";
+        if (chipLow != null && chipLow.isChecked()) return "Low";
+        if (chipHigh != null && chipHigh.isChecked()) return "High";
         return "Medium";
     }
 
@@ -74,12 +112,8 @@ public class AddTaskActivity extends AppCompatActivity {
             return;
         }
 
+        btnSaveTask.setEnabled(false);
         String priority = selectedPriority();
-
-        // TODO: insert into SQLite for the logged-in user, e.g.
-        // dbHelper.addTask(userId, title, note, priority, dueDate);
-
-        Toast.makeText(this, "Task added", Toast.LENGTH_SHORT).show();
-        finish();
+        viewModel.saveTask(title, note, priority, dueDate);
     }
 }

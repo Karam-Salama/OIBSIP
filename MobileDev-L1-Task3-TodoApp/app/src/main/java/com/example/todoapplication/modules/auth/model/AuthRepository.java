@@ -40,8 +40,8 @@ public class AuthRepository {
         UserModel userModel = new UserModel(
                 user.getUid(),
                 resolvedName,
-                resolvedEmail,
-                phone
+                resolvedEmail
+
         );
 
         return firestore.collection("users")

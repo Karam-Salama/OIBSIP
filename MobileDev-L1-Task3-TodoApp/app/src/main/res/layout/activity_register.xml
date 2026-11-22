@@ -25,7 +25,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create account"
-            android:textColor="@color/title_text"
+            android:fontFamily="@font/kanit_bold"
+            android:textColor="@color/tf_text_primary"
             android:textSize="32sp"
             android:textStyle="bold" />
 
@@ -33,8 +34,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
+            android:fontFamily="@font/kanit_regular"
             android:text="Sign up to start organizing your tasks"
-            android:textColor="@color/subtitle_text"
+            android:textColor="@color/tf_text_secondary"
             android:textSize="18sp" />
 
         <TextView
@@ -42,7 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="Name"
-            android:textColor="@color/label_text"
+            android:fontFamily="@font/kanit_bold"
+            android:textColor="@color/tf_lable"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -53,11 +56,12 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/bg_input"
             android:hint="Your name"
+            android:fontFamily="@font/kanit_regular"
             android:inputType="textPersonName"
             android:paddingStart="18dp"
             android:paddingEnd="18dp"
-            android:textColor="@color/title_text"
-            android:textColorHint="@color/hint_text"
+            android:textColor="@color/tf_text_primary"
+            android:textColorHint="@color/tf_text_secondary"
             android:textSize="17sp" />
 
         <TextView
@@ -65,7 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Email"
-            android:textColor="@color/label_text"
+            android:fontFamily="@font/kanit_bold"
+            android:textColor="@color/tf_lable"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -76,11 +81,12 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/bg_input"
             android:hint="you@example.com"
+            android:fontFamily="@font/kanit_regular"
             android:inputType="textEmailAddress"
             android:paddingStart="18dp"
             android:paddingEnd="18dp"
-            android:textColor="@color/title_text"
-            android:textColorHint="@color/hint_text"
+            android:textColor="@color/tf_text_primary"
+            android:textColorHint="@color/tf_text_secondary"
             android:textSize="17sp" />
 
         <TextView
@@ -88,7 +94,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Password"
-            android:textColor="@color/label_text"
+            android:fontFamily="@font/kanit_bold"
+            android:textColor="@color/tf_lable"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -106,8 +113,9 @@
                 android:inputType="textPassword"
                 android:paddingStart="18dp"
                 android:paddingEnd="52dp"
-                android:textColor="@color/title_text"
-                android:textColorHint="@color/hint_text"
+                android:fontFamily="@font/kanit_regular"
+                android:textColor="@color/tf_text_primary"
+                android:textColorHint="@color/tf_text_secondary"
                 android:textSize="17sp" />
 
             <ImageButton
@@ -150,7 +158,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Already have an account? "
-                android:textColor="@color/subtitle_text"
+                android:fontFamily="@font/kanit_regular"
+                android:textColor="@color/tf_text_secondary"
                 android:textSize="16sp" />
 
             <TextView
@@ -159,6 +168,7 @@
                 android:layout_height="wrap_content"
                 android:padding="4dp"
                 android:text="Log in"
+                android:fontFamily="@font/kanit_regular"
                 android:textColor="@color/tf_primary"
                 android:textSize="16sp"
                 android:textStyle="bold" />

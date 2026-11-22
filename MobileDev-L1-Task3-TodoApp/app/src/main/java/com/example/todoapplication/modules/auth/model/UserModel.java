@@ -14,22 +14,20 @@ public class UserModel {
     private String name;
     @NonNull
     private String email;
-    @Nullable
-    private String phone;
+
 
     // Default constructor مطلوب لـ Firestore deserialization
     public UserModel() {
-        this("", "", "", null);
+        this("", "", "");
     }
 
     public UserModel(@NonNull String uid,
                      @NonNull String name,
-                     @NonNull String email,
-                     @Nullable String phone) {
+                     @NonNull String email
+                     ) {
         this.uid = uid;
         this.name = name;
         this.email = email;
-        this.phone = phone;
     }
 
     @NonNull
@@ -47,10 +45,6 @@ public class UserModel {
         return email;
     }
 
-    @Nullable
-    public String getPhone() {
-        return phone;
-    }
 
     @NonNull
     public Map<String, Object> toMap() {
@@ -58,7 +52,6 @@ public class UserModel {
         map.put("uid", uid);
         map.put("name", name);
         map.put("email", email);
-        map.put("phone", phone);
         return map;
     }
 
@@ -67,8 +60,7 @@ public class UserModel {
         String uid = map.get("uid") instanceof String ? (String) map.get("uid") : "";
         String name = map.get("name") instanceof String ? (String) map.get("name") : "";
         String email = map.get("email") instanceof String ? (String) map.get("email") : "";
-        String phone = map.get("phone") instanceof String ? (String) map.get("phone") : null;
 
-        return new UserModel(uid, name, email, phone);
+        return new UserModel(uid, name, email);
     }
 }

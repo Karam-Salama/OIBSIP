@@ -23,7 +23,7 @@ import com.example.todoapplication.modules.auth.model.AuthRepository;
 import com.example.todoapplication.modules.auth.viewmodel.AuthViewModelFactory;
 import com.example.todoapplication.modules.auth.viewmodel.LoginState;
 import com.example.todoapplication.modules.auth.viewmodel.LoginViewModel;
-import com.example.todoapplication.modules.home.MainActivity;
+import com.example.todoapplication.modules.home.view.MainActivity;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;

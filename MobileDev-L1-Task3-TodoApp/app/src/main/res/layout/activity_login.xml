@@ -57,10 +57,11 @@
             android:background="@drawable/bg_input"
             android:hint="@string/example_email"
             android:inputType="textEmailAddress"
+            android:fontFamily="@font/kanit_regular"
             android:paddingStart="18dp"
             android:paddingEnd="18dp"
             android:textColor="@color/tf_text_primary"
-            android:textColorHint="@color/text_color_hint"
+            android:textColorHint="@color/tf_text_secondary"
             android:textSize="17sp" />
 
         <TextView
@@ -68,7 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/password"
-            android:textColor="@color/tf_text_primary"
+            android:fontFamily="@font/kanit_bold"
+            android:textColor="@color/tf_lable"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -86,8 +88,9 @@
                 android:inputType="textPassword"
                 android:paddingStart="18dp"
                 android:paddingEnd="52dp"
+                android:fontFamily="@font/kanit_regular"
                 android:textColor="@color/tf_text_primary"
-                android:textColorHint="@color/text_color_hint"
+                android:textColorHint="@color/tf_text_secondary"
                 android:textSize="17sp" />
 
             <ImageButton
@@ -109,6 +112,7 @@
             android:layout_marginVertical="16dp"
             android:text="@string/login_forgot"
             android:textAlignment="viewEnd"
+            android:fontFamily="@font/kanit_regular"
             android:textColor="@color/tf_primary"
             android:textSize="15sp" />
 

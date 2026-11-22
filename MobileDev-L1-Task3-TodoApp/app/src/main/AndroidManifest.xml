@@ -18,10 +18,10 @@
             android:name=".modules.auth.view.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".modules.home.AddTaskActivity"
+            android:name=".modules.home.view.AddTaskActivity"
             android:exported="false" />
         <activity
-            android:name=".modules.home.MainActivity"
+            android:name=".modules.home.view.MainActivity"
             android:exported="false" />
         <activity
             android:name=".modules.auth.view.RegisterActivity"

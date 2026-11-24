@@ -42,19 +42,11 @@ OIBSIP/
 │   ├── app/
 │   ├── screenshots/
 │   └── README.md
-├── Android-Task3-TodoApp/
-│   ├── app/
-│   ├── screenshots/
-│   └── README.md
-├── Android-Task4-QuizApp/
-│   ├── app/
-│   ├── screenshots/
-│   └── README.md
-├── Android-Task5-Stopwatch/
-│   ├── app/
-│   ├── screenshots/
-│   └── README.md
-└── README.md
+└── Android-Task3-TodoApp/
+    ├── app/
+    ├── screenshots/
+    └── README.md
+
 ```
 
 ---

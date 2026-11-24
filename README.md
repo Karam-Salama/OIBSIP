@@ -4,8 +4,6 @@
 
 [![Java](https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
-[![Architecture](https://img.shields.io/badge/Architecture-MVVM-blue?style=for-the-badge)](https://developer.android.com/topic/architecture)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -22,69 +20,51 @@
 
 ## 📖 Overview
 
-Welcome to the **OIBSIP** repository! This repository serves as the central showcase for all Android application development tasks completed during the **Oasis Infobyte Virtual Internship Program (November 2026 Batch)**.
-
-Each project in this repository demonstrates clean architecture principles, modern UI/UX patterns, robust data persistence, and effective asynchronous state management.
+This repository contains the Android development tasks completed during the **Oasis Infobyte Virtual Internship Program (November 2026 Batch)**.
 
 ---
 
 ## 📁 Repository Structure
 
-All tasks are organized inside dedicated directories using the standard naming convention required by the program:
-
 ```text
 OIBSIP/
-├── Android-Task1-UnitConverter/
-│   ├── app/
-│   ├── screenshots/
-│   └── README.md
-├── Android-Task2-Calculator/
-│   ├── app/
-│   ├── screenshots/
-│   └── README.md
-└── Android-Task3-TodoApp/
-    ├── app/
-    ├── screenshots/
-    └── README.md
-
+├── MobileDev-L1-Task1-UnitCoverterApp/
+├── MobileDev-L1-Task2-CalculatorApp/
+├── MobileDev-L1-Task3-TodoApp/
+└── README.md
 ```
 
 ---
 
 ## 🚀 Tasks Overview & Status
 
-| Task # | Task Name | Description & Key Concepts | Completion | Directory |
-|:---:|---|---|:---:|:---:|
-| **01** | **Convertly** | Metric and unit conversion utility (Length, Weight, Temperature) handling dynamic calculations and user input validation. | ✅  | [`Android-Task1-UnitConverter`](./Android-Task1-UnitConverter) |
-| **02** | **Calculator** | Interactive arithmetic calculator with sequential operator chaining, grid UI, and zero-division error handling. | ✅ | [`Android-Task2-Calculator`](https://github.com/Karam-Salama/OIBSIP/tree/master/MobileDev-L1-Task2-CalculatorApp) |
-| **03** | **Taskly** | Task management app with Firebase Authentication, user-scoped SQLite storage, RecyclerView, completion state, and deletion. |  ✅  | [`Android-Task2-ToDoApp`](./Android-Task3-ToDoApp) |
-
+| Task # | Task Name | Description & Key Concepts | Status | Directory | LinkedIn |
+|:---:|---|---|:---:|---|:---:|
+| **01** | **Convertly** | Unit conversion utility (Length, Weight, Temperature) with dynamic calculations and input validation. | ✅ | [Task 1](https://github.com/Karam-Salama/OIBSIP/tree/master/MobileDev-L1-Task1-UnitCoverterApp) | [Post](https://lnkd.in/p/exGFebG8) |
+| **02** | **Calculator** | Arithmetic calculator with operator chaining, grid UI, and zero-division handling. | ✅ | [Task 2](https://github.com/Karam-Salama/OIBSIP/tree/master/MobileDev-L1-Task2-CalculatorApp) | [Post](https://lnkd.in/p/ePXRRQAs) |
+| **03** | **Taskly** | To-do app with Firebase Authentication, user-scoped SQLite storage, RecyclerView, completion state, and deletion. | ✅ | [Task 3](https://github.com/Karam-Salama/OIBSIP/tree/master/MobileDev-L1-Task3-TodoApp) | [Post](https://lnkd.in/p/e8eVvAnf) |
 
 ---
 
-## 🧱 Key Technical Stack & Practices
-
-Across these projects, the following industry standards and frameworks were utilized:
+## 🧱 Tech Stack
 
 - **Language:** Java
-- **Architecture Pattern:** Clean Architecture principles.
-- **UI & Layouts:** Material Design 3, XML Layouts, View Binding, ConstraintLayout, and RecyclerView.
+- **UI:** Material Design 3, XML Layouts, View Binding, ConstraintLayout, RecyclerView
+- **Task 3:** Firebase Authentication, SQLite
 
 ---
 
-## 📹 Video Demonstrations & Submissions
+## 📹 Video Demonstrations
 
-Each task has been recorded and posted on LinkedIn according to the submission guidelines:
-- **Requirement Met:** Intro screen displaying Candidate Name, Track, and Task Title for the first 2 seconds.
-- **Tagging:** Published with `#oasisinfobyte` and mandatory tags.
+Each task was recorded and posted on LinkedIn with `#oasisinfobyte`, including an intro screen with the candidate name, track, and task title.
 
 ---
 
-## 📬 Contact & Links
+## 📬 Contact
 
-- **LinkedIn Profile:** [LinkedIn](https://www.linkedin.com/in/karam-salama/)
-- **GitHub Profile:** [GitHub](https://github.com/Karam-Salama)
-- **Portofolio:** [Portofolio](https://karam-salama-vc6dgdq.gamma.site)
+- **LinkedIn:** [karam-salama](https://www.linkedin.com/in/karam-salama/)
+- **GitHub:** [Karam-Salama](https://github.com/Karam-Salama)
+- **Portfolio:** [Portfolio](https://karam-salama-vc6dgdq.gamma.site)
 - **Email:** karamsalama2024@gmail.com
 
 <hr>
